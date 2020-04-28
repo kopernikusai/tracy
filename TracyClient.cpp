@@ -40,6 +40,7 @@
 #endif
 
 #ifdef _MSC_VER
+#  pragma comment(lib, "User32.lib")
 #  pragma comment(lib, "ws2_32.lib")
 #  pragma comment(lib, "dbghelp.lib")
 #endif
