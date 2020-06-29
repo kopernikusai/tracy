@@ -140,6 +140,9 @@ TRACY_API void ___tracy_emit_messageLC( const char* txt, uint32_t color, int cal
 #  define TracyCMessageLC( txt, color ) ___tracy_emit_messageLC( txt, color, 0 );
 #endif
 
+TRACY_API void ___tracy_set_thread_name(const char *name);
+
+#define TracyCSetThreadName (name) ___tracy_set_thread_name(name);
 
 TRACY_API void ___tracy_emit_frame_mark( const char* name );
 TRACY_API void ___tracy_emit_frame_mark_start( const char* name );
